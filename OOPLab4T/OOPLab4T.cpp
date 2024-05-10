@@ -17,6 +17,7 @@ public:
         vector[0] = 0;
         m_size = 1;
         m_numb = 0;
+        int bad;
         codeError = 0;
     }
 
@@ -189,6 +190,7 @@ public:
         {
             codeError = 1;
             cout << "Invalid index(there is last index)" << vector[m_size - 1] << endl;
+            return  bad;
         }
     }
 
